@@ -28,8 +28,10 @@ class UserCard extends Component {
 		{this.state.showGamesPlayed && <div>
       	  <h4 className="user__card-heading">Number of games played</h4>
           <p>{user.gamesPlayed}</p>
+		 {user.topFiveGames.length > 0 &&
+          <div>
  		  <h4 className="user__card-heading">Favorite Games</h4>
-          <ul className="simple-list games__list">{user.topFiveGames.map((game) => (<li className="simple-list-item game__item">{game}</li>))}</ul>
+          <ul className="simple-list games__list">{user.topFiveGames.map((game) => (<li key={game} className="simple-list-item game__item">{game}</li>))}</ul></div>}
         </div>}
       </li>
     )
