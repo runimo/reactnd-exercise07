@@ -4,7 +4,7 @@ class CreateUser extends Component {
   render () {
     return (
       <div className="form">
-        <div>
+        <div className="input__container">
       	  <label
             className="input_label"
             for="userName">
@@ -15,9 +15,8 @@ class CreateUser extends Component {
            id="userName"
            type="text" />
         </div>
-        <div>
+        <div className="input__container">
       	  <label
-      	   className="input_label"
            for="firstName">
            First name
           </label>
@@ -26,14 +25,13 @@ class CreateUser extends Component {
            id="firstName"
            type="text" />
         </div>
-        <div>
+        <div className="input__container">
       	  <label
-      	   className="input_label"
            for="lastName">
            Last name
           </label>
-          <input 
-           className="input__field"
+          <input
+      	   className="input__field"
            id="lastName"
            type="text" />
         </div>

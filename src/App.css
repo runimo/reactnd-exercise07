@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-size: 18px;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: thin;
 }
 
 .App-logo {
@@ -23,19 +26,32 @@
 }
 
 .userlist__container {
-  background: black;
+  background: #060d12;
   margin-top: 60px;
 }
 
-.userlist {
+.simple-list {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.simple-list-item {
+  padding: 5px 0 5px 0;
 }
 
 .user__card {
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid white;
   margin: 10px;
-  padding: 15px;
+  padding: 25px;
+  background: #11191f;
+  border-radius: 7px;
+  color: #fcf9eb;
+  min-width: 1100px;
+}
+
+.user__card-heading {
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #535b61;
 }
 
 .input__field {
@@ -43,12 +59,16 @@
   margin: 5px auto;
 }
 
-.input_label {
- 
+.input__container {
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .form {
   padding-top: 10px;
+  color: #fcf9eb;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .btn {
@@ -57,6 +77,45 @@
   font-size: 20px;
   border-radius: 6px;
   border: none;
+  background: #b31930;
+}
+
+.btn:hover {
+  background: #700f1d;
+  color: #c2c2c2;
+}
+
+.highlighted {
+  color: #b31930;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.display--inline {
+  display: inline;
+}
+
+.divider {
+  margin: 0 5px;
+}
+
+.games__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.game__item {
+  background: #243038;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 7px 7px 7px 0;
+}
+
+.toggle__button {
+  float: right;
+  position: relative;
+  top: -15px;
 }
 
 @keyframes App-logo-spin {
