@@ -13,3 +13,7 @@ The website should also have a button that lets us toggle between showing and hi
 The underlying goal of this exercise was to practice the concept of state in React and how state is communicated between components.
 
 ![project screenshot with form to create new user and list of existing users](https://raw.githubusercontent.com/runimo/reactnd-exercise07/master/screenshot-reactnd-exercise07-updated.png)
+
+### Project Setup
+- Clone the project - `git clone https://github.com/runimo/reactnd-exercise07.git`
+- Install the dependencies - `npm install`
